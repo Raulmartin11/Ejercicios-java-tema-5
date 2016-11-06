@@ -11,7 +11,7 @@ public class Ejercicio09 {
 		while(numero >= 1) {
 			numero/=10;
 			digito++;
-			System.out.println("El numero introducido tiene " + digito + " digitos");
 		}
+		System.out.println("El numero introducido tiene " + digito + " digitos");
 	}
 }
