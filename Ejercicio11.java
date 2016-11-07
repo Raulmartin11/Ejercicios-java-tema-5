@@ -7,8 +7,8 @@ public class Ejercicio11 {
 		System.out.print("Introduce un numero: ");
 		int numero = Integer.parseInt(System.console().readLine());
 		for(int pronumero = 0; pronumero < 5; pronumero++) {
-				System.out.println("Numero     Cubo      Cuadrado");
-				System.out.printf("%-6d      %-6d      %-6d\n", numero+pronumero, (numero+pronumero)*(numero+pronumero), (numero+pronumero)*(numero+pronumero)*(numero+pronumero));
+				System.out.println("Numero     Cuadrado     Cubo");
+				System.out.printf("%-6d     %-6d       %-6d\n", numero+pronumero, (numero+pronumero)*(numero+pronumero), (numero+pronumero)*(numero+pronumero)*(numero+pronumero));
 			}
 		}
 	}
