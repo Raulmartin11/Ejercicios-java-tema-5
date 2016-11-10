@@ -8,6 +8,7 @@ public class Ejercicio16 {
 		int primo = Integer.parseInt(System.console().readLine());
 		int resultado = 0;
 		boolean esPrimo = true;
+		
 		for(int n=2; n < primo; n++){
 			resultado = primo % n;
 			if(resultado == 0){
@@ -19,6 +20,6 @@ public class Ejercicio16 {
 			System.out.println("el numero es primo");
 		}else{
 			System.out.println("el numero no es primo");
+		}
 	}
-}
 }
