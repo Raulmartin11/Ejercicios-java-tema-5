@@ -5,35 +5,43 @@
  public class Ejercicio20 {
 	 public static void main(String[] args) {
 		 
-		 System.out.print("Indica el tamaño de la piramide: ");
-		 int alturaIntroducida = Integer.parseInt(System.console().readLine());
-		 
-		 System.out.print("Indica el caracter de la piramide: ");
-		 String caracter = System.console().readLine();
-		 
-		 int i = 0;
-		 int altura = 1;
-		 int espacios = alturaIntroducida -1;
-		 
-		 while(altura < alturaIntroducida ) {
-			 
-			 for(i = 1; i <= espacios; i++) {
-				 if(i != espacios) {
-					System.out.print("_");
-				} else {
-					System.out.print(caracter);
-				}
-			}
-			
-			 for(i = 1; i < altura * 2 ; i++) {
-				System.out.print("-");
-			}
-			if(altura > 1) {
-				System.out.print(caracter);
-			}
-			System.out.println();
-			 altura++;;
-			espacios--;
-		 }
-	 }
- }
+    System.out.print("Por favor, introduzca la altura de la pirámide: ");
+    int alturaIntroducida = Integer.parseInt(System.console().readLine());
+
+    System.out.print("Introduzca el carácter de relleno: ");
+    String relleno = System.console().readLine();
+    
+    int altura = 1;
+    int i = 0;
+    int espaciosPorDelante = alturaIntroducida - 1;
+    int espaciosInternos = 0;
+    
+    while (altura < alturaIntroducida) {
+      
+      // inserta espacios delante
+      for (i = 1; i <= espaciosPorDelante; i++) {
+        System.out.print(" ");
+      }
+      
+      // pinta la línea
+      System.out.print(relleno);
+      for (i = 1; i < espaciosInternos; i++) {
+        System.out.print("-");
+      }
+      
+      if (altura>1) {
+        System.out.print(relleno);
+      }
+      
+      System.out.println();
+      altura++;
+      espaciosPorDelante--;
+      espaciosInternos += 2;
+    } // while ////////////////////////////
+    
+    // base de la pirámide
+    for (i = 1; i < altura*2; i++) {
+      System.out.print(relleno);
+    }
+  }
+}

@@ -8,8 +8,6 @@
 		 System.out.print("Indica el tamaño de la piramide: ");
 		 int alturaIntroducida = Integer.parseInt(System.console().readLine());
 		 
-		 System.out.print("Indica el caracter de la piramide: ");
-		 String caracter = System.console().readLine();
 		 
 		 int i = 0;
 		 int altura = 1;
@@ -20,7 +18,7 @@
 				System.out.print(" ");
 			}
 			 for(i = 1; i < altura * 2; i++) {
-				System.out.print(caracter);
+				System.out.print("*");
 			}
 			System.out.println();
 			
