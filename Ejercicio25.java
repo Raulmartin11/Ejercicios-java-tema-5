@@ -9,7 +9,6 @@
 	 public static void main(String[] args) {
 		 Scanner S = new Scanner(System.in);
 		 
-		int oremun = 0;
 		int n = 0;
 		int i, j;
 		System.out.println("Introduzca un numero");
